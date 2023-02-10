@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>payment</title>
+<meta name="veiwport" content="width=device-width,initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+ <header>
+  <div id="payment">
+    <div id="container">
+     <div class="left">
+	    <h2>BILLING ADDRESS</h2>
+		<form id="form">
+		    Full name</br>
+			<input type="text" name="name" placeholder="Enter full name" class="field"/></br></br>
+			Email</br>
+			<input type="email" name="email" placeholder="Enter email" class="field"/></br></br>
+			Address</br>
+			<input type="text" name="address" placeholder="Full address" class="field"/></br></br>
+			City</br>
+			<input type="text" name="city" placeholder="Full city" class="field"/></br></br>
+			<div class="label">
+			    State</br>
+				 <select>
+				    <option>Choose state..</option>
+					<option>Rajasthan</option>
+					<option>Punjab</option>
+					<option>Karnataka</option>
+					<option>Mumbai</option>
+				 </select>
+				 Zip code
+				  <input type="number" name="name" placeholder="Zip code"/>
+			</div>
+		</form>
+	 </div>
+	 <div class="right">
+	      <h2>PAYMENT</h2>
+		  <button onclick="on()" class="on">on</button>
+		  <button onclick="off()" class="off">off</button>
+		  <button onclick="red()" class="red"></button>
+		  <button onclick="green()"class="green"></button>
+		  <button onclick="pink()" class="pink"></button>
+		  
+		  
+		<form id="form">
+		    Accepted Card</br></br>
+			<img src="card.jpg" width="100px" height="50px"/></br></br>
+			Credit card number</br>
+			<input type="text" name="card number" placeholder="Enter card number" class="field"/></br></br>
+			Exp month</br>
+			<input type="text" name="exp" placeholder="Enter month" class="field"/></br></br>
+			<div class="label">
+			    Exp year</br>
+				 <select>
+				    <option>Choose year</option>
+					<option>2022</option>
+					<option>2023</option>
+					<option>2024</option>
+					<option>2025</option>
+				 </select>
+				 CVV
+				  <input type="number" name="name" placeholder="cvv"/>
+			</div>
+		</form>
+		<button class="btn">Proceed To Pay</button>
+	 </div>
+	</div>
+   </div>
+ </header>
+ <script>
+       function on(){
+      document.getElementById('container').style.background="#1abc9c";
+   }
+    function off(){
+      document.getElementById('container').style.background="";
+   }
+    function red(){
+      document.getElementById('container').style.background="red";
+   }
+    function green(){
+      document.getElementById('container').style.background="green";
+   }
+    function pink(){
+      document.getElementById('container').style.background="pink";
+   }
+    
+ </script>
+</body>
+</html>
